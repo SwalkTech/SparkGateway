@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="GBK" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>SparkGateway</artifactId>
+    <groupId>com.spark</groupId>
+    <version>1.0</version>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <!-- 列出项目中的各个模块，以便Maven构建工具识别和处理 -->
+        <module>SparkGateway-BootStrap</module> <!-- 引导加载模块，通常包含启动配置和初始化代码 -->
+        <module>SparkGateway-Core</module> <!-- 核心功能模块，包含主要的业务逻辑和处理代码 -->
+        <module>SparkGateway-Common</module> <!-- 公共工具模块，包含跨模块使用的工具类和常量 -->
+        <module>SparkGateway-Config</module> <!-- 配置管理模块，负责存储和提供配置信息 -->
+        <module>SparkGateway-Register</module> <!-- 注册中心模块，用于服务发现和注册 -->
+
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <lombok.version>1.18.26</lombok.version>
+        <netty.version>4.1.51.Final</netty.version>
+        <junit.version>4.12</junit.version>
+        <jackson.version>2.17.2</jackson.version>
+        <nacos.version>2.2.0</nacos.version>
+        <slf4j.version>1.7.25</slf4j.version>
+        <logback.version>1.1.7</logback.version>
+        <fastjson.verson>1.2.76</fastjson.verson>
+        <commons-beanutils.version>1.9.4</commons-beanutils.version>
+        <hutool.version>5.8.26</hutool.version>
+        <async-http-client.version>2.0.37</async-http-client.version>
+        <resilience4j.version>2.2.0</resilience4j.version>
+    </properties>
+
+    <dependencies>
+
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+        <!--日志-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+    </dependencies>
+</project>

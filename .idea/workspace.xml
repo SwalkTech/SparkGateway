@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="feat(common): 添加基础工具类和常量定义&#10;&#10;- 新增多个常量接口，定义了日期格式、配置中心、流控、负载均衡等相关的常量&#10;- 添加了自定义异常类，用于处理连接、限流、查找等场景下的异常&#10;- 新增系统工具类，用于判断操作系统类型和是否使用Epoll&#10;- 在pom.xml中添加了Netty依赖，并在父项目pom.xml中定义了Netty版本">
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/BasicConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/ConfigCenterConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/ConfigConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/FallbackConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/FilterConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/HttpConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/LoadBalanceConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/NacosConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/RegisterCenterConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/SparkConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/CircuitBreakerEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ConfigCenterEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/FlowEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/RegisterCenterEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ResilienceEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ResponseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/ConnectException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/GatewayException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/LimitedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/ResponseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/util/SystemUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkGateway-Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XML Properties File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SwalkTech&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:/SwalkTech/Spark-Gateway.git&quot;,
+    &quot;accountId&quot;: &quot;9393bfb0-60fe-40de-9d2f-8248d5104f00&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="F:\maven\repository" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="F:\maven\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2opssMsngVMAmMAmIGUyKFJV21M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.SparkGateway [clean,install,--projects...].executor": "Run",
+    "Maven.SparkGateway [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/github/Spark-Gateway/SparkGateway-Register/src/main/java/com/spark/service/impl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.33793104",
+    "settings.editor.selected.configurable": "settings.saveactions",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Register\src\main\java\com\spark\service\impl" />
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Core" />
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main\java\com\spark\gateway\config" />
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main\java\com\spark\gateway\config\config" />
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Common\src\main\java\com\spark" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spark.service" />
+      <recent name="com.spark.gateway.config.config" />
+      <recent name="com.spark.enums" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SparkGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SparkGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SparkGateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SparkGateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="SparkGateway" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SparkGateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="" />
+      <created>1731578056435</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731578056435</updated>
+      <workItem from="1731578057663" duration="6288000" />
+      <workItem from="1731663367871" duration="7000" />
+      <workItem from="1731663406557" duration="46000" />
+      <workItem from="1731663466089" duration="8000" />
+      <workItem from="1731663495433" duration="755000" />
+      <workItem from="1731664260267" duration="53000" />
+      <workItem from="1731664324414" duration="107000" />
+      <workItem from="1731664443695" duration="373000" />
+      <workItem from="1732703571512" duration="599000" />
+      <workItem from="1735272721887" duration="13415000" />
+      <workItem from="1735358711093" duration="389000" />
+      <workItem from="1735367848658" duration="1000" />
+      <workItem from="1735389404050" duration="69000" />
+      <workItem from="1735406722803" duration="15997000" />
+      <workItem from="1735519099769" duration="579000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
+      <option name="closed" value="true" />
+      <created>1731578460501</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1731578460501</updated>
+    </task>
+    <task id="LOCAL-00002" summary="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。">
+      <option name="closed" value="true" />
+      <created>1731578608104</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731578608104</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
+    <MESSAGE value="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
