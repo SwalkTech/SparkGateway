@@ -19,6 +19,11 @@ import static com.spark.constant.FilterConstant.FLOW_FILTER_NAME;
 import static com.spark.constant.FilterConstant.FLOW_FILTER_ORDER;
 
 
+/**
+ * @author: spark
+ * @date: 2024/12/30 10:17
+ * @description: 流量过滤器
+ **/
 public class FlowFilter implements Filter {
 
     private final ConcurrentHashMap<String /* 服务名 */, RateLimiter> rateLimiterMap = new ConcurrentHashMap<>();

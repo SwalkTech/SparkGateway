@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="feat(common): 添加基础工具类和常量定义&#10;&#10;- 新增多个常量接口，定义了日期格式、配置中心、流控、负载均衡等相关的常量&#10;- 添加了自定义异常类，用于处理连接、限流、查找等场景下的异常&#10;- 新增系统工具类，用于判断操作系统类型和是否使用Epoll&#10;- 在pom.xml中添加了Netty依赖，并在父项目pom.xml中定义了Netty版本">
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/BasicConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/ConfigCenterConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/ConfigConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/FallbackConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/FilterConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/HttpConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/LoadBalanceConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/NacosConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/RegisterCenterConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/constant/SparkConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/CircuitBreakerEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ConfigCenterEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/FlowEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/RegisterCenterEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ResilienceEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/enums/ResponseCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/ConnectException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/GatewayException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/LimitedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/exception/ResponseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Common/src/main/java/com/spark/util/SystemUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-Common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="init">
+      <change afterPath="$PROJECT_DIR$/SparkGateway-Config/src/main/resources/META-INF/services/com.spark.gateway.config.service.impl.nacos.NacosConfigCenter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkGateway-BootStrap/src/mian/java/com/spark/gateway/bootstrap/Bootstarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-BootStrap/src/mian/java/com/spark/gateway/bootstrap/Bootstarp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkGateway-Core/src/main/java/com/spark/gateway/core/filter/flow/FlowFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Core/src/main/java/com/spark/gateway/core/filter/flow/FlowFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SparkGateway-Register/src/main/java/com/spark/service/RegisterCenterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Register/src/main/java/com/spark/service/RegisterCenterProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +37,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:/SwalkTech/Spark-Gateway.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:/SwalkTech/SparkGateway.git&quot;,
     &quot;accountId&quot;: &quot;9393bfb0-60fe-40de-9d2f-8248d5104f00&quot;
   }
 }</component>
@@ -91,9 +74,10 @@
     "Maven.SparkGateway [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/github/Spark-Gateway/SparkGateway-Register/src/main/java/com/spark/service/impl",
+    "last_opened_file_path": "F:/github/Spark-Gateway/SparkGateway-Config/src/main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,17 +86,17 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "settings.saveactions",
+    "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Register\src\main\java\com\spark\service\impl" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Core" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main\java\com\spark\gateway\config" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main\java\com\spark\gateway\config\config" />
-      <recent name="F:\github\Spark-Gateway\SparkGateway-Common\src\main\java\com\spark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.spark.service" />
@@ -185,7 +169,8 @@
       <workItem from="1735367848658" duration="1000" />
       <workItem from="1735389404050" duration="69000" />
       <workItem from="1735406722803" duration="15997000" />
-      <workItem from="1735519099769" duration="579000" />
+      <workItem from="1735519099769" duration="2409000" />
+      <workItem from="1735523619749" duration="1400000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
       <option name="closed" value="true" />
@@ -203,16 +188,36 @@
       <option name="project" value="LOCAL" />
       <updated>1731578608104</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1735519863630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735519863630</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
     <MESSAGE value="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

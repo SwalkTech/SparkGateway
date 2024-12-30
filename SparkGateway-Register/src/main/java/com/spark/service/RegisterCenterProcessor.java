@@ -2,9 +2,12 @@ package com.spark.service;
 
 import com.spark.gateway.config.config.Config;
 
+
 /**
- * 注册中心接口
- */
+ * @author: spark
+ * @date: 2024/12/30 08:51
+ * @description: 注册中心接口
+ **/
 public interface RegisterCenterProcessor {
 
     /**
