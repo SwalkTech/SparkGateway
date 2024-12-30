@@ -7,7 +7,7 @@ import com.spark.gateway.config.pojo.ServiceInstance;
 import com.spark.gateway.config.util.FilterUtil;
 import com.spark.gateway.core.context.GatewayContext;
 import com.spark.gateway.core.filter.Filter;
-import com.spark.gateway.core.filter.gray.strategy.GrayStrategy;
+import com.spark.gateway.core.filter.gray.strategy.SparkStrategy;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
@@ -42,7 +42,7 @@ public class GrayFilter implements Filter {
         if (instances.stream().anyMatch(instance -> instance.isEnabled() && instance.isGray())) {
             // 存在灰度实例
             // 根据过滤器配置选择灰度策略
-            GrayStrategy strategy = selectGrayStrategy(JSONUtil.toBean(filterConfig.getConfig(), RouteDefinition.GrayFilterConfig.class));
+            SparkStrategy strategy = selectGrayStrategy(JSONUtil.toBean(filterConfig.getConfig(), RouteDefinition.GrayFilterConfig.class));
             // 根据灰度策略判断是否路由到灰度实例
             context.getRequest().setGray(strategy.shouldRoute2Gray(context, instances));
         } else {
@@ -74,7 +74,7 @@ public class GrayFilter implements Filter {
      * @param grayFilterConfig 灰度过滤配置，包含了策略名称等信息
      * @return 返回对应的灰度策略实例
      */
-    private GrayStrategy selectGrayStrategy(RouteDefinition.GrayFilterConfig grayFilterConfig) {
+    private SparkStrategy selectGrayStrategy(RouteDefinition.GrayFilterConfig grayFilterConfig) {
         // 通过灰度策略名称获取对应的灰度策略实例
         return GrayStrategyManager.getStrategy(grayFilterConfig.getStrategyName());
     }

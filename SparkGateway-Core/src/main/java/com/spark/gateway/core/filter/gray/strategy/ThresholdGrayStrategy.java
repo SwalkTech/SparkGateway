@@ -14,7 +14,7 @@ import static com.spark.constant.SparkConstant.THRESHOLD_GRAY_STRATEGY;
 /**
  * 根据流量决定是否灰度策略
  */
-public class ThresholdGrayStrategy implements GrayStrategy {
+public class ThresholdGrayStrategy implements SparkStrategy {
 
     @Override
     public boolean shouldRoute2Gray(GatewayContext context, List<ServiceInstance> instances) {

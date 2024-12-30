@@ -5,7 +5,12 @@ import com.spark.gateway.core.context.GatewayContext;
 
 import java.util.List;
 
-public interface GrayStrategy {
+/**
+ * @author: spark
+ * @date: 2024/12/30 10:29
+ * @description: 灰度策略
+ **/
+public interface SparkStrategy {
 
     boolean shouldRoute2Gray(GatewayContext context, List<ServiceInstance> instances);
 

@@ -11,7 +11,7 @@ import static com.spark.constant.FilterConstant.SPARK_FILTER_NAME;
 import static com.spark.constant.SparkConstant.CLIENT_IP_GRAY_STRATEGY;
 
 
-public class ClientIpGrayStrategy implements GrayStrategy {
+public class ClientIpGrayStrategy implements SparkStrategy {
 
     @Override
     public boolean shouldRoute2Gray(GatewayContext context, List<ServiceInstance> instances) {
