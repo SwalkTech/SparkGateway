@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="init">
-      <change afterPath="$PROJECT_DIR$/SparkGateway-Config/src/main/resources/META-INF/services/com.spark.gateway.config.service.impl.nacos.NacosConfigCenter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="init: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-BootStrap/src/mian/java/com/spark/gateway/bootstrap/Bootstarp.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-BootStrap/src/mian/java/com/spark/gateway/bootstrap/Bootstarp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-Core/src/main/java/com/spark/gateway/core/filter/flow/FlowFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Core/src/main/java/com/spark/gateway/core/filter/flow/FlowFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-Register/src/main/java/com/spark/service/RegisterCenterProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-Register/src/main/java/com/spark/service/RegisterCenterProcessor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "configurable.group.language",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -170,7 +165,7 @@
       <workItem from="1735389404050" duration="69000" />
       <workItem from="1735406722803" duration="15997000" />
       <workItem from="1735519099769" duration="2409000" />
-      <workItem from="1735523619749" duration="1400000" />
+      <workItem from="1735523619749" duration="1846000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
       <option name="closed" value="true" />
@@ -196,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735519863630</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="init: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
+      <option name="closed" value="true" />
+      <created>1735525146720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735525146720</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +220,8 @@
     <MESSAGE value="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
     <MESSAGE value="chore: 删除 Intellij IDEA项目配置文件&#10;&#10;删除了以下 Intellij IDEA 项目配置文件：&#10;- compiler.xml&#10;- encodings.xml- jarRepositories.xml&#10;&#10;这些文件可能已经过时或不再需要，移除它们可以简化项目配置。" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="init: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="init: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
