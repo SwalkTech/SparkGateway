@@ -1,7 +1,6 @@
 package com.spark.gateway.config.util;
 
 
-
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -24,6 +23,7 @@ public class ConfigUtil {
             if (inputStream == null) {
                 return null;
             }
+            
             ObjectNode rootNode = (ObjectNode) mapper.readTree(inputStream);
             ObjectNode subNode = getSubNode(rootNode, prefix);
             return mapper.treeToValue(subNode, clazz);

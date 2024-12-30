@@ -101,8 +101,9 @@ public class NacosRegisterCenter implements RegisterCenterProcessor {
 
         // 设置网关服务元数据信息
         Map<String, String> serviceInfo = BeanUtils.describe(new ServiceDefinition(config.getName()));
-        namingMaintainService.updateService(config.getName(), group, 0, serviceInfo);
         log.info("gateway service meta register: {}", serviceInfo);
+        namingMaintainService.updateService(config.getName(), group, 0, serviceInfo);
+
     }
 
     /**

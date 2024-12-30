@@ -1,11 +1,11 @@
 package com.spark.gateway.core.resilience.fallback;
 
-import com.spark.gateway.common.enums.ResponseCode;
+import com.spark.enums.ResponseCode;
 import com.spark.gateway.core.context.GatewayContext;
 import com.spark.gateway.core.helper.ContextHelper;
 import com.spark.gateway.core.helper.ResponseHelper;
 
-import static com.spark.gateway.common.constant.FallbackConstant.DEFAULT_FALLBACK_HANDLER_NAME;
+import static com.spark.constant.FallbackConstant.DEFAULT_FALLBACK_HANDLER_NAME;
 
 public class DefaultFallbackHandler implements FallbackHandler {
 

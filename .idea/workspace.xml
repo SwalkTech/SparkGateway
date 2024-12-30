@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="docs: 添加项目 README 文件并更新工作区配置&#10;&#10;- 新增 README.md 文件，提供项目概述、环境要求、快速开始等信息&#10;- 更新 Intellij IDEA 工作区配置，优化项目结构和编码设置&#10;- 添加项目初始化相关的提交信息，记录创建过程和配置">
-      <change afterPath="$PROJECT_DIR$/1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-User/src/main/java/com/spark/gateway/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SparkGateway-User/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-User/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-User/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-User/src/main/java/com/spark/sparkgatewayuser/SparkGatewayUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/SparkGateway-User/src/main/java/com/spark/gateway/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SparkGateway-User/src/main/resources/application.properties" beforeDir="false" />
-    </list>
+    <list default="true" id="5491059a-1e0a-42de-9387-c422a8ce1734" name="更改" comment="refactor(项目结构): 重构项目布局和模块划分&#10;&#10;-重新组织了项目结构，将 SparkGateway-Starter 模块重命名为 Spart-Gateway-Starter&#10;-调整了各个模块之间的依赖关系&#10;- 更新了配置文件和启动脚本&#10;- 移除了不必要的测试代码" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +29,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:/SwalkTech/SparkGateway.git&quot;,
+    &quot;url&quot;: &quot;git@github.com:SwalkTech/SparkGateway.git&quot;,
     &quot;accountId&quot;: &quot;9393bfb0-60fe-40de-9d2f-8248d5104f00&quot;
   }
 }</component>
@@ -74,8 +62,21 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.Main.executor": "Run",
     "Maven.SparkGateway [clean,install,--projects...].executor": "Run",
+    "Maven.SparkGateway [clean].executor": "Run",
+    "Maven.SparkGateway [compile].executor": "Run",
+    "Maven.SparkGateway [install,--projects...].executor": "Run",
+    "Maven.SparkGateway [install].executor": "Run",
     "Maven.SparkGateway [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.SparkGateway [org.apache.maven.plugins:maven-install-plugin:3.1.2:help].executor": "Run",
+    "Maven.SparkGateway [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
+    "Maven.SparkGateway-Core [clean].executor": "Run",
+    "Maven.SparkGateway-Core [install].executor": "Run",
+    "Maven.SparkGateway-Starter [clean,install...].executor": "Run",
+    "Maven.SparkGateway-Starter [install...].executor": "Run",
+    "Maven.SparkGateway-User [clean,install...].executor": "Run",
+    "Maven.SparkGateway-User [install...].executor": "Run",
     "Maven.SparkGateway-User [install].executor": "Run",
     "Maven.SparkGateway-User [org.apache.maven.plugins:maven-clean-plugin:3.4.0:clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
@@ -89,32 +90,46 @@
     "Spring Boot.SparkGatewayUserApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/github/Spark-Gateway/SparkGateway-Register/src/main",
+    "last_opened_file_path": "F:/github/SparkGateway/SparkGateway-User/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
+    "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.33793104",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\github\SparkGateway\SparkGateway-User\src\main\resources" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Register\src\main" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Register\src\main\java\com\spark\service\impl" />
       <recent name="F:\github\Spark-Gateway\SparkGateway-Core" />
-      <recent name="F:\github\Spark-Gateway\SparkGateway-Config\src\main\java\com\spark\gateway\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\github\SparkGateway\Spart-Gateway-Starter\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.spark.service" />
       <recent name="com.spark.gateway.config.config" />
       <recent name="com.spark.enums" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="JetRunConfigurationType">
@@ -129,37 +144,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="SparkGateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="SparkGateway" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spark.sparkgatewaystarter.Main" />
+      <module name="SparkGateway-Starter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spark.sparkgatewaystarter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SparkGateway" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SparkGateway" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SparkGateway" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="SparkGateway" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="SparkGateway" />
-      <option name="filePath" />
-      <method v="2" />
     </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="SparkGateway-User" />
@@ -174,9 +180,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkGatewayStarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="SparkGateway-Starter" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spark.sparkgatewaystarter.SparkGatewayStarterApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spark.sparkgatewaystarter.Main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -194,13 +200,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpartGatewayStarterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Spart-Gateway-Starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spark.spartgatewaystarter.SpartGatewayStarterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Spring Boot.SparkGatewayStarterApplication" />
+      <item itemvalue="Spring Boot.SpartGatewayStarterApplication" />
+      <item itemvalue="Spring Boot.Main" />
+      <item itemvalue="Spring Boot.SparkGatewayUserApplication" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="应用程序.Main" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +256,9 @@
       <workItem from="1735526852281" duration="190000" />
       <workItem from="1735527063861" duration="336000" />
       <workItem from="1735527411608" duration="5068000" />
+      <workItem from="1735538117242" duration="952000" />
+      <workItem from="1735539077615" duration="90000" />
+      <workItem from="1735539199124" duration="9933000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件">
       <option name="closed" value="true" />
@@ -288,7 +308,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735526561462</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactor(项目结构): 重构项目布局和模块划分&#10;&#10;-重新组织了项目结构，将 SparkGateway-Starter 模块重命名为 Spart-Gateway-Starter&#10;-调整了各个模块之间的依赖关系&#10;- 更新了配置文件和启动脚本&#10;- 移除了不必要的测试代码">
+      <option name="closed" value="true" />
+      <created>1735548934187</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735548934187</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +339,19 @@
     <MESSAGE value="init" />
     <MESSAGE value="init: 初始化 SparkGateway 项目- 创建项目结构和模块划分- 添加 Maven 构建配置- 设置编码和编译参数- 引入 Lombok 和日志依赖&#10;- 配置 Idea 编译器和编码&#10;- 添加 Git 忽略文件" />
     <MESSAGE value="docs: 添加项目 README 文件并更新工作区配置&#10;&#10;- 新增 README.md 文件，提供项目概述、环境要求、快速开始等信息&#10;- 更新 Intellij IDEA 工作区配置，优化项目结构和编码设置&#10;- 添加项目初始化相关的提交信息，记录创建过程和配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: 添加项目 README 文件并更新工作区配置&#10;&#10;- 新增 README.md 文件，提供项目概述、环境要求、快速开始等信息&#10;- 更新 Intellij IDEA 工作区配置，优化项目结构和编码设置&#10;- 添加项目初始化相关的提交信息，记录创建过程和配置" />
+    <MESSAGE value="refactor(项目结构): 重构项目布局和模块划分&#10;&#10;-重新组织了项目结构，将 SparkGateway-Starter 模块重命名为 Spart-Gateway-Starter&#10;-调整了各个模块之间的依赖关系&#10;- 更新了配置文件和启动脚本&#10;- 移除了不必要的测试代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(项目结构): 重构项目布局和模块划分&#10;&#10;-重新组织了项目结构，将 SparkGateway-Starter 模块重命名为 Spart-Gateway-Starter&#10;-调整了各个模块之间的依赖关系&#10;- 更新了配置文件和启动脚本&#10;- 移除了不必要的测试代码" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/SparkGateway-Register/src/main/java/com/spark/service/impl/nacos/NacosRegisterCenter.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

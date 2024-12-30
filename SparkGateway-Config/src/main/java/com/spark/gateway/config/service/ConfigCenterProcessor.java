@@ -5,6 +5,8 @@ import com.spark.gateway.config.config.ConfigCenter;
 
 /**
  * 配置中心接口
+ *
+ * @author 12975
  */
 public interface ConfigCenterProcessor {
 

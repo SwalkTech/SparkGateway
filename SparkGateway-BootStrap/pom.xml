@@ -16,19 +16,9 @@
     <dependencies>
         <dependency>
             <groupId>com.spark</groupId>
-            <artifactId>SparkGateway-Config</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.spark</groupId>
             <artifactId>SparkGateway-Core</artifactId>
             <version>1.0</version>
         </dependency>
-        <dependency>
-            <groupId>com.spark</groupId>
-            <artifactId>SparkGateway-Register</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
+
 </project>

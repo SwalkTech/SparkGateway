@@ -12,7 +12,13 @@
         <option value="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" />
         <option value="$PROJECT_DIR$/SparkGateway-User/pom.xml" />
         <option value="$PROJECT_DIR$/SparkGateway-Starter/pom.xml" />
+        <option value="$PROJECT_DIR$/Spart-Gateway-Starter/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SparkGateway-Starter/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="17" project-jdk-type="JavaSDK" />

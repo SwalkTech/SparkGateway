@@ -22,6 +22,9 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
+/**
+ * @author 12975
+ */
 @Slf4j
 public class NacosConfigCenter implements ConfigCenterProcessor {
 
@@ -57,53 +60,65 @@ public class NacosConfigCenter implements ConfigCenterProcessor {
      * @param listener 路由变更事件监听器，用于处理路由配置变化后的逻辑
      */
     @Override
-    @SneakyThrows(NacosException.class)
     public void subscribeRoutesChange(RoutesChangeListener listener) {
         // 检查配置中心是否已启用且初始化成功，若未满足条件则直接返回
         if (!configCenter.isEnabled() || !init.get()) {
             return;
         }
 
-        // 获取Nacos配置信息
-        NacosConfig nacos = configCenter.getNacos();
-        // 从Nacos中获取路由配置信息
-        String configJson = configService.getConfig(nacos.getDataId(), nacos.getGroup(), nacos.getTimeout());
-        /*
-         * configJson示例:
-         * {
-         *     "routes": [
-         *         {
-         *             "id": "user-service-route",
-         *             "serviceName": "user-service",
-         *             "uri": "/api/user/**"
-         *         }
-         *     ]
-         * }
-         */
-        // 日志输出获取到的配置信息
-        log.info("config from nacos: \n{}", configJson);
+        try {
+            // 获取Nacos配置信息
+            NacosConfig nacos = configCenter.getNacos();
+            // 从Nacos中获取路由配置信息
+            String configJson = configService.getConfig(nacos.getDataId(), nacos.getGroup(), nacos.getTimeout());
 
-        // 解析配置信息中的路由定义，并通知监听器
-        List<RouteDefinition> routes = JSON.parseObject(configJson).getJSONArray("routes").toJavaList(RouteDefinition.class);
-        listener.onRoutesChange(routes);
+            // 日志输出获取到的配置信息（脱敏处理）
+            log.info("config from nacos: \n{}", maskSensitiveInfo(configJson));
 
-        // 为Nacos配置添加监听器，以便在配置变更时收到通知
-        configService.addListener(nacos.getDataId(), nacos.getGroup(), new Listener() {
-            @Override
-            public Executor getExecutor() {
-                return null;
+            // 解析配置信息中的路由定义，并通知监听器
+            if (configJson != null && !configJson.trim().isEmpty()) {
+                List<RouteDefinition> routes = JSON.parseObject(configJson).getJSONArray("routes").toJavaList(RouteDefinition.class);
+                synchronized (listener) {
+                    listener.onRoutesChange(routes);
+                }
             }
 
-            @Override
-            public void receiveConfigInfo(String configInfo) {
-                // 当配置信息变更时，日志输出变更内容
-                log.info("config change from nacos: {}", configInfo);
-                // 解析变更后的配置信息中的路由定义，并通知监听器
-                List<RouteDefinition> routes = JSON.parseObject(configInfo).getJSONArray("routes").toJavaList(RouteDefinition.class);
-                listener.onRoutesChange(routes);
-            }
-        });
+            // 为Nacos配置添加监听器，以便在配置变更时收到通知
+            configService.addListener(nacos.getDataId(), nacos.getGroup(), new Listener() {
+                @Override
+                public Executor getExecutor() {
+                    return null;
+                }
+
+                @Override
+                public void receiveConfigInfo(String configInfo) {
+                    try {
+                        // 当配置信息变更时，日志输出变更内容（脱敏处理）
+                        log.info("config change from nacos: {}", maskSensitiveInfo(configInfo));
+                        // 解析变更后的配置信息中的路由定义，并通知监听器
+                        if (configInfo != null && !configInfo.trim().isEmpty()) {
+                            List<RouteDefinition> routes = JSON.parseObject(configInfo).getJSONArray("routes").toJavaList(RouteDefinition.class);
+                            synchronized (listener) {
+                                listener.onRoutesChange(routes);
+                            }
+                        }
+                    } catch (Exception e) {
+                        log.error("Error processing config change", e);
+                    }
+                }
+            });
+        } catch (NacosException e) {
+            log.error("Error subscribing to route changes", e);
+        }
     }
+
+    // 添加一个方法用于脱敏日志输出
+    private String maskSensitiveInfo(String config) {
+        // 实现具体的脱敏逻辑，例如替换敏感字段的值
+        // 这里只是一个示例，实际应用中需要根据具体情况实现
+        return config.replaceAll("(\"password\":\")([^\"]*)", "$1****");
+    }
+
 
     /**
      * 根据配置中心的信息构建Properties对象
@@ -123,7 +138,7 @@ public class NacosConfigCenter implements ConfigCenterProcessor {
 
         // 将配置中心的Nacos配置转换为Map对象
         Map map = mapper.convertValue(configCenter.getNacos(), Map.class);
-        
+
         // 如果Nacos配置为空，则直接返回当前的Properties对象
         if (map == null || map.isEmpty()) {
             return properties;
