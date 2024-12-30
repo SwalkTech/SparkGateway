@@ -1,13 +1,13 @@
-package com.spark.sparkgatewayuser;
+package com.spark.sparkgatewaystarter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SparkGatewayUserApplication {
+public class SparkGatewayStarterApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SparkGatewayUserApplication.class, args);
+        SpringApplication.run(SparkGatewayStarterApplication.class, args);
     }
 
 }

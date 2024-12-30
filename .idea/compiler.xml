@@ -7,12 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SparkGateway-BootStrap" />
+        <module name="SparkGateway-User" />
+        <module name="SparkGateway-Common" />
         <module name="SparkGateway-Core" />
         <module name="SparkGateway-Register" />
-        <module name="SparkGateway-BootStrap" />
+        <module name="SparkGateway-Starter" />
         <module name="SparkGateway-Config" />
-        <module name="SparkGateway-Common" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SparkGateway-Starter" options="-parameters" />
+      <module name="SparkGateway-User" options="" />
+    </option>
   </component>
 </project>

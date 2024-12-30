@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/SparkGateway-Config/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SparkGateway-BootStrap/pom.xml" />
+        <option value="$PROJECT_DIR$/SparkGateway-User/pom.xml" />
+        <option value="$PROJECT_DIR$/SparkGateway-Starter/pom.xml" />
       </list>
     </option>
   </component>
